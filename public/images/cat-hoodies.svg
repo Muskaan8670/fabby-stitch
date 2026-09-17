@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <radialGradient id="hoodieBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#28282C"/>
+      <stop offset="100%" stop-color="#121214"/>
+    </radialGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#hoodieBg)"/>
+
+  <!-- Hoodie Silhouette Graphic -->
+  <g transform="translate(150, 180)">
+    <!-- Hood Volume Outline -->
+    <path d="M 180 120 C 180 30, 320 30, 320 120 C 320 160, 180 160, 180 120 Z" fill="#18181A" stroke="#3F3F46" stroke-width="3"/>
+    
+    <!-- Body Silhouette -->
+    <path d="M 50 140 L 160 110 L 340 110 L 450 140 L 410 260 L 370 240 L 370 580 L 130 580 L 130 240 L 90 260 Z" fill="#1E1E22" stroke="#3F3F46" stroke-width="2"/>
+    
+    <!-- Kangaroo Pocket outline -->
+    <path d="M 170 420 L 330 420 L 360 540 L 140 540 Z" fill="#18181A" stroke="#52525B" stroke-width="2"/>
+
+    <!-- Hood Drawstring Eyelets & Cords -->
+    <circle cx="230" cy="150" r="4" fill="url(#goldHighlight)"/>
+    <circle cx="270" cy="150" r="4" fill="url(#goldHighlight)"/>
+    <line x1="230" y1="154" x2="225" y2="240" stroke="#FAF9F6" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="270" y1="154" x2="275" y2="240" stroke="#FAF9F6" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Framing & Title -->
+  <rect x="25" y="25" width="750" height="950" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  <text x="400" y="910" font-family="'Geist', sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#C5A059" text-anchor="middle">FLEECE HOODIES &amp; SWEATSHIRTS</text>
+</svg>

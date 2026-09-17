@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="1000" height="1200">
+  <defs>
+    <radialGradient id="essentialsBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FAF9F6"/>
+      <stop offset="70%" stop-color="#F2F1EC"/>
+      <stop offset="100%" stop-color="#E5E3DC"/>
+    </radialGradient>
+    <linearGradient id="fabricShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121212" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#121212" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="1200" fill="url(#essentialsBg)"/>
+
+  <!-- Subtle Minimal Frame -->
+  <rect x="30" y="30" width="940" height="1140" fill="none" stroke="#121212" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Stacked Essentials Graphic (Heavyweight Tee & Fleece Hoodie) -->
+  <g transform="translate(150, 180)">
+    
+    <!-- Base Stack Shadow -->
+    <ellipse cx="350" cy="820" rx="320" ry="30" fill="url(#fabricShadow)"/>
+
+    <!-- Bottom Garment: Deep Charcoal Fleece Hoodie Fold -->
+    <g transform="translate(40, 420)">
+      <path d="M 40 40 C 140 10, 480 10, 580 40 L 620 280 C 520 310, 100 310, 10 280 Z" fill="#18181A" stroke="#2D2D32" stroke-width="2"/>
+      <path d="M 70 80 C 220 120, 400 120, 550 80" stroke="#0D0D0E" stroke-width="6" opacity="0.6"/>
+      <line x1="80" y1="240" x2="540" y2="240" stroke="#2B2B30" stroke-width="3"/>
+    </g>
+
+    <!-- Middle Garment: Muted Sand Sweatshirt Fold -->
+    <g transform="translate(80, 260)">
+      <path d="M 30 30 C 120 10, 420 10, 500 30 L 530 240 C 440 260, 90 260, 10 240 Z" fill="#D4D4D8" stroke="#A1A1AA" stroke-width="2"/>
+      <path d="M 80 60 C 200 90, 340 90, 440 60" stroke="#71717A" stroke-width="4" opacity="0.4"/>
+    </g>
+
+    <!-- Top Garment: Crisp Off-White Heavyweight T-Shirt Fold -->
+    <g transform="translate(100, 100)">
+      <path d="M 30 20 C 130 0, 390 0, 470 20 L 500 220 C 410 240, 80 240, 0 220 Z" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="2"/>
+      <!-- Ribbed Collar Detail -->
+      <path d="M 170 20 C 210 45, 270 45, 310 20" fill="none" stroke="#121212" stroke-width="2.5"/>
+      <!-- Fold Shadows & Stitch Detail -->
+      <path d="M 120 80 C 220 120, 300 120, 400 80" fill="none" stroke="#E4E4E7" stroke-width="3"/>
+      
+      <!-- Woven Brand Tag -->
+      <rect x="220" y="10" width="40" height="20" fill="#121212" rx="1"/>
+      <text x="240" y="24" font-family="'Geist', sans-serif" font-size="7" font-weight="700" fill="#C5A059" text-anchor="middle" letter-spacing="1">FABBY</text>
+    </g>
+  </g>
+
+  <!-- Editorial Badge Watermark -->
+  <text x="500" y="1120" font-family="'Geist', sans-serif" font-size="11" font-weight="600" letter-spacing="4" fill="#121212" opacity="0.4" text-anchor="middle">READY-TO-WEAR • ESSENTIALS</text>
+</svg>

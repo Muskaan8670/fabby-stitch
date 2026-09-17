@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <radialGradient id="tshirtBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1E1E22"/>
+      <stop offset="100%" stop-color="#0E0E10"/>
+    </radialGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#tshirtBg)"/>
+  
+  <!-- Studio Light Bloom -->
+  <circle cx="400" cy="400" r="300" fill="#FFFFFF" fill-opacity="0.03" filter="blur(30px)"/>
+
+  <!-- T-Shirt Silhouette Graphic -->
+  <g transform="translate(150, 200)">
+    <!-- Heavyweight Oversized Tee Silhouette -->
+    <path d="M 60 100 L 180 60 C 260 90, 340 90, 420 60 L 540 100 L 480 240 L 440 220 L 440 560 L 60 560 L 60 220 L 20 240 Z" fill="#FAF9F6" opacity="0.95"/>
+    
+    <!-- Collar Detail -->
+    <path d="M 180 60 C 230 100, 270 100, 320 60" fill="none" stroke="#121212" stroke-width="4"/>
+    <path d="M 185 68 C 230 104, 270 104, 315 68" fill="none" stroke="url(#goldHighlight)" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Drop Shoulder Seam Details -->
+    <line x1="160" y1="65" x2="115" y2="200" stroke="#E4E4E7" stroke-width="2"/>
+    <line x1="340" y1="65" x2="385" y2="200" stroke="#E4E4E7" stroke-width="2"/>
+    
+    <!-- Heavy Hem Fold Shadows -->
+    <line x1="60" y1="540" x2="440" y2="540" stroke="#D4D4D8" stroke-width="3"/>
+  </g>
+
+  <!-- Framing & Title -->
+  <rect x="25" y="25" width="750" height="950" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  <text x="400" y="910" font-family="'Geist', sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#C5A059" text-anchor="middle">HEAVYWEIGHT TEES • 240–300 GSM</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Background Gradient: Deep Studio Ambient Lighting -->
+    <radialGradient id="studioLighting" cx="60%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#242427"/>
+      <stop offset="50%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+
+    <!-- Warm Metallic Gold Stitch/Accent Gradient -->
+    <linearGradient id="goldGleam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C378"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#917234"/>
+    </linearGradient>
+
+    <!-- Soft Fabric Shadow Gradient -->
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Heavyweight Cotton Micro-Texture -->
+    <pattern id="cottonTexture" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.02"/>
+      <circle cx="12" cy="12" r="1" fill="#FFFFFF" fill-opacity="0.02"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Studio Environment -->
+  <rect width="1920" height="1080" fill="url(#studioLighting)"/>
+  <rect width="1920" height="1080" fill="url(#cottonTexture)"/>
+
+  <!-- High-End Editorial Fashion Apparel Composition (Right Side Visual Anchor) -->
+  <g transform="translate(1000, 100)">
+    
+    <!-- Backdrop Studio Lighting Curve -->
+    <ellipse cx="400" cy="400" rx="450" ry="380" fill="#FFFFFF" fill-opacity="0.03" filter="blur(40px)"/>
+
+    <!-- Layered Premium Apparel Fold 1: Deep Black Heavyweight Hoodie -->
+    <g transform="translate(100, 180)">
+      <path d="M 50 120 C 120 80, 420 80, 500 120 L 540 480 C 480 520, 120 520, 60 480 Z" fill="#18181A" stroke="#2C2C30" stroke-width="2"/>
+      <!-- Soft Shoulder Fold Shadows -->
+      <path d="M 120 160 C 220 200, 380 200, 440 160" stroke="#0D0D0E" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+      <!-- Ribbed Hem Texture Lines -->
+      <path d="M 90 440 L 510 440 M 90 450 L 510 450 M 90 460 L 510 460" stroke="#252528" stroke-width="2"/>
+    </g>
+
+    <!-- Layered Premium Apparel Fold 2: Crisp Off-White Heavy Oversized Tee -->
+    <g transform="translate(160, 260)">
+      <!-- Drop Shoulder Oversized Silhouette -->
+      <path d="M 40 100 C 140 70, 380 70, 460 100 L 490 380 C 420 410, 100 410, 30 380 Z" fill="#FAF9F6" stroke="#E4E4E7" stroke-width="2"/>
+      
+      <!-- Collar & Seamless Necktape Stitch Detail -->
+      <path d="M 170 85 C 220 120, 290 120, 330 85" fill="none" stroke="#121212" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 175 92 C 225 124, 285 124, 325 92" fill="none" stroke="url(#goldGleam)" stroke-width="1.5" stroke-dasharray="3 3"/>
+      
+      <!-- Clean Minimal Fabric Drape Shadow -->
+      <path d="M 140 150 C 220 240, 300 240, 380 150" fill="none" stroke="#D4D4D8" stroke-width="4" opacity="0.5"/>
+      <path d="M 80 220 C 180 320, 320 320, 420 220" fill="none" stroke="#E4E4E7" stroke-width="3" opacity="0.4"/>
+
+      <!-- Editorial Minimalist Brand Tag Detail -->
+      <rect x="230" y="70" width="36" height="24" fill="#121212" rx="2"/>
+      <text x="248" y="85" font-family="'Geist', sans-serif" font-size="7" font-weight="700" fill="#C5A059" text-anchor="middle" letter-spacing="1">FABBY</text>
+    </g>
+
+    <!-- Layered Premium Apparel Fold 3: Muted Earth Tone / Charcoal Sweatshirt Stack -->
+    <g transform="translate(240, 400)">
+      <path d="M 30 80 C 120 50, 340 50, 420 80 L 440 280 C 380 310, 80 310, 10 280 Z" fill="#2D2D32" stroke="#3F3F46" stroke-width="2"/>
+      <path d="M 100 120 C 180 170, 260 170, 340 120" stroke="#1A1A1C" stroke-width="6" opacity="0.5"/>
+      <!-- Gold Precision Stitching Overlay -->
+      <path d="M 40 260 L 410 260" stroke="url(#goldGleam)" stroke-width="2" stroke-dasharray="6 4"/>
+    </g>
+
+    <!-- Subtle Ambient Reflection & Ground Shadow -->
+    <ellipse cx="380" cy="740" rx="360" ry="40" fill="url(#shadowGrad)"/>
+  </g>
+
+  <!-- Editorial Framing Accent Overlay -->
+  <rect x="40" y="40" width="1840" height="1000" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  
+  <!-- Sleek Corner Embroidery Stitch Marks -->
+  <path d="M 40 60 L 60 60 L 60 40" stroke="url(#goldGleam)" stroke-width="2" fill="none"/>
+  <path d="M 1880 60 L 1860 60 L 1860 40" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" fill="none"/>
+  <path d="M 40 1020 L 60 1020 L 60 1040" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" fill="none"/>
+  <path d="M 1880 1020 L 1860 1020 L 1860 1040" stroke="url(#goldGleam)" stroke-width="2" fill="none"/>
+
+  <!-- Minimal Brand Coordinates Watermark -->
+  <text x="1840" y="1010" text-anchor="end" font-family="'Geist', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#C5A059" opacity="0.8">FABBY STITCH • APPAREL STUDIO NYC</text>
+</svg>

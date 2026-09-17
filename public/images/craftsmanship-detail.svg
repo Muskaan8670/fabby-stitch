@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <radialGradient id="craftBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#26262B"/>
+      <stop offset="60%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0A0A0C"/>
+    </radialGradient>
+    <linearGradient id="goldThread" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C378"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#917234"/>
+    </linearGradient>
+    <pattern id="weavePattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 0 4 L 16 4 M 0 12 L 16 12" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+      <path d="M 4 0 L 4 16 M 12 0 L 12 16" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Dark Canvas -->
+  <rect width="1000" height="1000" fill="url(#craftBg)"/>
+  <rect width="1000" height="1000" fill="url(#weavePattern)"/>
+
+  <!-- Macro Fabric Seam & Stitching Detail Visual -->
+  <g transform="translate(100, 100)">
+    <!-- Heavyweight Fabric Panel Curve -->
+    <path d="M 100 150 C 350 100, 650 250, 750 650 L 550 750 C 450 400, 250 250, 50 250 Z" fill="#1C1C20" stroke="#333338" stroke-width="2"/>
+    
+    <!-- Precision Double Stitch Line -->
+    <path d="M 120 170 C 360 120, 640 260, 730 630" fill="none" stroke="url(#goldThread)" stroke-width="2.5" stroke-dasharray="8 5"/>
+    <path d="M 135 185 C 370 135, 650 275, 740 645" fill="none" stroke="#FAF9F6" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+    <!-- High-Density Embroidered Patch Silhouette -->
+    <g transform="translate(320, 320)">
+      <polygon points="120,0 240,70 240,210 120,280 0,210 0,70" fill="#141416" stroke="url(#goldThread)" stroke-width="3"/>
+      <circle cx="120" cy="140" r="80" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+      
+      <!-- Stitched Emblem Text -->
+      <text x="120" y="152" font-family="'Geist', sans-serif" font-size="38" font-weight="900" fill="url(#goldThread)" text-anchor="middle" letter-spacing="3">NYC</text>
+    </g>
+  </g>
+
+  <!-- Framing Accents -->
+  <rect x="30" y="30" width="940" height="940" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+  <text x="940" y="940" font-family="'Geist', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#C5A059" text-anchor="end" opacity="0.8">FABBY STITCH • BESPOKE CONSTRUCTION</text>
+</svg>

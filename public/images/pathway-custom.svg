@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="1000" height="1200">
+  <defs>
+    <radialGradient id="customBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#222225"/>
+      <stop offset="70%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0B0B0C"/>
+    </radialGradient>
+    <linearGradient id="goldThread" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C378"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#917234"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="1200" fill="url(#customBg)"/>
+
+  <!-- Subtle Minimal Frame -->
+  <rect x="30" y="30" width="940" height="1140" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Embroidery Hoop & Garment Craftsmanship Graphic -->
+  <g transform="translate(150, 160)">
+    
+    <!-- Outer Wooden Embroidery Hoop Shadow & Ring -->
+    <circle cx="350" cy="400" r="320" fill="none" stroke="#2D2D32" stroke-width="24"/>
+    <circle cx="350" cy="400" r="308" fill="none" stroke="#9A7B38" stroke-width="3" stroke-opacity="0.8"/>
+    
+    <!-- Hoop Hardware Latch -->
+    <rect x="330" y="60" width="40" height="30" fill="url(#goldThread)" rx="3"/>
+    <line x1="310" y1="75" x2="390" y2="75" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+
+    <!-- Taut Canvas Fabric Inside Hoop -->
+    <circle cx="350" cy="400" r="296" fill="#18181B"/>
+
+    <!-- High-Density Embroidery Stitching Lines & Logo Emblem Graphic -->
+    <g transform="translate(200, 250)">
+      <!-- Custom Emblem Outline -->
+      <polygon points="150,30 270,100 270,240 150,310 30,240 30,100" fill="none" stroke="url(#goldThread)" stroke-width="4" stroke-dasharray="8 4"/>
+      <polygon points="150,55 245,110 245,225 150,280 55,225 55,110" fill="#242428" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+      
+      <!-- Stitched Monogram "FS" (Fabby Stitch) -->
+      <text x="150" y="195" font-family="'Geist', sans-serif" font-size="90" font-weight="900" fill="url(#goldThread)" text-anchor="middle" letter-spacing="4">FS</text>
+      
+      <!-- Cross Stitch Texture Marks -->
+      <path d="M 50 160 L 250 160 M 150 60 L 150 260" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1.5" stroke-dasharray="4 4"/>
+    </g>
+
+    <!-- Floating Needle & Thread Spool Contour -->
+    <path d="M 620 220 L 500 340" stroke="#FAF9F6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 620 220 C 650 180, 580 140, 500 180 C 420 220, 380 180, 350 240" fill="none" stroke="url(#goldThread)" stroke-width="2" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Editorial Badge Watermark -->
+  <text x="500" y="1120" font-family="'Geist', sans-serif" font-size="11" font-weight="600" letter-spacing="4" fill="#C5A059" opacity="0.8" text-anchor="middle">CUSTOM APPAREL • EMBROIDERY &amp; PRINT</text>
+</svg>

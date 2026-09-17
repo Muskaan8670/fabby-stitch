@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <radialGradient id="capBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#242220"/>
+      <stop offset="100%" stop-color="#0F0E0D"/>
+    </radialGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#capBg)"/>
+
+  <!-- Cap Silhouette Graphic -->
+  <g transform="translate(150, 240)">
+    <!-- 6-Panel Crown Dome -->
+    <path d="M 120 280 C 120 120, 380 120, 380 280 Z" fill="#1A1817" stroke="#3D3A37" stroke-width="2"/>
+    
+    <!-- Curved Visor Brim -->
+    <path d="M 80 270 C 180 320, 320 320, 480 270 C 440 330, 120 330, 80 270 Z" fill="#2E2B28" stroke="#524E49" stroke-width="2"/>
+
+    <!-- Panel Seam Stitching Lines -->
+    <path d="M 250 140 L 250 280" stroke="#524E49" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <path d="M 250 140 L 170 280" stroke="#524E49" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <path d="M 250 140 L 330 280" stroke="#524E49" stroke-width="1.5" stroke-dasharray="3 3"/>
+    
+    <!-- Top Button (Squatcho) -->
+    <circle cx="250" cy="140" r="10" fill="url(#goldHighlight)"/>
+
+    <!-- Front Custom 3D Embroidered Logo Emblem -->
+    <rect x="210" y="200" width="80" height="40" fill="none" stroke="url(#goldHighlight)" stroke-width="2.5" stroke-dasharray="4 2"/>
+    <text x="250" y="228" font-family="'Geist', sans-serif" font-size="18" font-weight="900" fill="url(#goldHighlight)" text-anchor="middle" letter-spacing="2">FS</text>
+  </g>
+
+  <!-- Framing & Title -->
+  <rect x="25" y="25" width="750" height="950" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  <text x="400" y="910" font-family="'Geist', sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#C5A059" text-anchor="middle">EMBROIDERED CAPS &amp; HEADWEAR</text>
+</svg>

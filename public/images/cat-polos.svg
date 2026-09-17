@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <radialGradient id="poloBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1C2430"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </radialGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#poloBg)"/>
+
+  <!-- Polo Shirt Silhouette Graphic -->
+  <g transform="translate(150, 190)">
+    <!-- Main Body Silhouette -->
+    <path d="M 60 100 L 170 60 L 330 60 L 440 100 L 400 230 L 360 210 L 360 560 L 140 560 L 140 210 L 100 230 Z" fill="#253042" stroke="#3A4A63" stroke-width="2"/>
+    
+    <!-- Tailored Pique Collar -->
+    <path d="M 170 60 L 220 160 L 250 160 L 250 60 Z" fill="#1C2430" stroke="#3A4A63" stroke-width="2"/>
+    <path d="M 330 60 L 280 160 L 250 160 L 250 60 Z" fill="#1C2430" stroke="#3A4A63" stroke-width="2"/>
+    
+    <!-- Placket & Pearl Buttons -->
+    <rect x="235" y="160" width="30" height="120" fill="#171F2C" stroke="#3A4A63" stroke-width="1.5"/>
+    <circle cx="250" cy="190" r="4" fill="#FAF9F6"/>
+    <circle cx="250" cy="225" r="4" fill="#FAF9F6"/>
+    <circle cx="250" cy="260" r="4" fill="#FAF9F6"/>
+
+    <!-- Chest Logo Embroidery Highlight -->
+    <circle cx="310" cy="220" r="8" fill="none" stroke="url(#goldHighlight)" stroke-width="2"/>
+  </g>
+
+  <!-- Framing & Title -->
+  <rect x="25" y="25" width="750" height="950" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  <text x="400" y="910" font-family="'Geist', sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#C5A059" text-anchor="middle">PIQUE &amp; CORPORATE POLOS</text>
+</svg>
