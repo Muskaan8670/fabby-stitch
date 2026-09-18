@@ -4,7 +4,7 @@ export const ANNOUNCEMENT_TEXT =
   "Auto 10% off on your first order • Priority on Quality • Custom Embroidery & Direct Screen Printing";
 
 export const MAIN_NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/home" },
   { label: "Shop", href: "/shop" },
   { label: "Services", href: "/services" },
   {
@@ -30,7 +30,7 @@ export const MAIN_NAV_ITEMS: NavItem[] = [
 ];
 
 export const MOBILE_NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/home" },
   { label: "Shop Retail Catalog", href: "/shop" },
   { label: "T-Shirt", href: "/shop?category=t-shirts" },
   { label: "Hoodie", href: "/shop?category=hoodies" },

@@ -13,7 +13,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Graphic Streetwear & Heavyweight Blanks",
     description: "Graphic streetwear, heavyweight combed cotton essentials, and relaxed everyday silhouettes.",
     href: "/collections/t-shirts",
-    imageSrc: "/images/cat-tshirts-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.39 (1).jpeg",
     imageAlt: "Fabby Stitch T-Shirts Collection",
     layout: "large",
   },
@@ -23,7 +23,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Heavyweight Fleece & Double Hoods",
     description: "Ultra-heavyweight fleece pullovers, zip hoodies, and double-walled hoods built for winter warmth.",
     href: "/collections/hoodies",
-    imageSrc: "/images/cat-hoodies-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg",
     imageAlt: "Fabby Stitch Hoodies Collection",
     layout: "large",
   },
@@ -33,7 +33,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Pique Knit & Corporate Uniforms",
     description: "Refined pique knit polos engineered for corporate branding, custom embroidery, and team apparel.",
     href: "/collections/polos",
-    imageSrc: "/images/cat-polos-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
     imageAlt: "Fabby Stitch Polo Shirts Collection",
     layout: "medium",
   },
@@ -43,7 +43,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Classic Crewneck Fleece",
     description: "Soft fleece crewneck sweatshirts designed for layered streetwear style and direct workshop customization.",
     href: "/collections/sweatshirts",
-    imageSrc: "/images/featured-hoodie-crewneck-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.25.04 (3).jpeg",
     imageAlt: "Fabby Stitch Sweatshirts Collection",
     layout: "medium",
   },
@@ -53,7 +53,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Layered Cotton Essentials",
     description: "Premium long sleeve cotton t-shirts ideal for custom screen printing and seasonal wardrobe essentials.",
     href: "/collections/t-shirts",
-    imageSrc: "/images/prod-tee-02.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.30.06.jpeg",
     imageAlt: "Fabby Stitch Long Sleeve T-shirts Collection",
     layout: "medium",
   },
@@ -63,7 +63,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Structured 6-Panel & 3D Puff Embroidery",
     description: "Structured cotton twill caps and dad hats crafted for high-density 3D puff embroidery and custom branding.",
     href: "/collections/caps",
-    imageSrc: "/images/cat-caps-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
     imageAlt: "Fabby Stitch Headwear Collection",
     layout: "full",
   },
@@ -121,7 +121,7 @@ export default function ProductsPage() {
                     alt={cat.imageAlt}
                     fill
                     priority
-                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
+                    className="object-cover object-[center_10%] transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/90 via-[#121212]/40 to-transparent" />
@@ -165,12 +165,12 @@ export default function ProductsPage() {
                 href={cat.href}
                 className="group relative flex flex-col justify-between bg-white border border-[#E4E4E7] overflow-hidden transition-all duration-300 hover:border-zinc-400 hover:shadow-xl"
               >
-                <div className="relative w-full aspect-[4/3] bg-zinc-900 overflow-hidden">
+                <div className="relative w-full aspect-[4/5] bg-zinc-900 overflow-hidden">
                   <Image
                     src={cat.imageSrc}
                     alt={cat.imageAlt}
                     fill
-                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="object-cover object-[center_10%] transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent" />
@@ -216,7 +216,7 @@ export default function ProductsPage() {
                   src={cat.imageSrc}
                   alt={cat.imageAlt}
                   fill
-                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
+                  className="object-cover object-[center_15%] transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#121212]/30 to-[#121212]/90 hidden lg:block" />

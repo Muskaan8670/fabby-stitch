@@ -10,7 +10,7 @@ export default function Header() {
         
         {/* Left / Logo Section */}
         <div className="flex items-center gap-8">
-          <Link href="/" className="group flex items-center gap-3">
+          <Link href="/home" className="group flex items-center gap-3">
             <Image
               src="/images/favvy-stitch-logo.webp"
               alt="Fabby Stitch — Bespoke & Custom Apparel Workshop NYC"

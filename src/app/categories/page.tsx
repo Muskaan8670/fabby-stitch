@@ -59,7 +59,7 @@ export default function CategoriesPage() {
                     alt={cat.imageAlt}
                     fill
                     priority
-                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
+                    className="object-cover object-[center_10%] transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/90 via-[#121212]/40 to-transparent" />
@@ -103,12 +103,12 @@ export default function CategoriesPage() {
                 href={cat.href}
                 className="group relative flex flex-col justify-between bg-white border border-[#E4E4E7] overflow-hidden transition-all duration-300 hover:border-zinc-400 hover:shadow-xl"
               >
-                <div className="relative w-full aspect-[4/3] bg-zinc-900 overflow-hidden">
+                <div className="relative w-full aspect-[4/5] bg-zinc-900 overflow-hidden">
                   <Image
                     src={cat.imageSrc}
                     alt={cat.imageAlt}
                     fill
-                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="object-cover object-[center_10%] transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent" />
@@ -154,7 +154,7 @@ export default function CategoriesPage() {
                   src={cat.imageSrc}
                   alt={cat.imageAlt}
                   fill
-                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
+                  className="object-cover object-[center_15%] transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#121212]/30 to-[#121212]/90 hidden lg:block" />

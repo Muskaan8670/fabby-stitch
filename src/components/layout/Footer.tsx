@@ -10,7 +10,7 @@ export default function Footer() {
           
           {/* Col 1: Logo & Brand Info */}
           <div className="space-y-4 md:col-span-1">
-            <Link href="/" className="inline-block group">
+            <Link href="/home" className="inline-block group">
               <Image
                 src="/images/favvy-stitch-logo.webp"
                 alt="Fabby Stitch — Priority on Quality"

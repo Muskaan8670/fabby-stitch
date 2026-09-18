@@ -14,12 +14,12 @@ export default function ShopProductCard({ product, onQuickAdd }: ShopProductCard
     <article className="group relative flex flex-col bg-white border border-[#E4E4E7] overflow-hidden transition-all duration-300 hover:border-zinc-400 hover:shadow-xl">
       {/* Product Image Container */}
       <div className="relative w-full aspect-[4/5] bg-zinc-900 overflow-hidden">
-        <Link href={`/shop?product=${product.slug}`} className="block w-full h-full">
+        <Link href={`/products/${product.slug}`} className="block w-full h-full">
           <Image
             src={product.imageSrc}
             alt={product.imageAlt}
             fill
-            className={`object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 ${
+            className={`object-cover object-[center_12%] transition-transform duration-700 ease-out group-hover:scale-105 ${
               product.soldOut ? "opacity-75 grayscale-[30%]" : ""
             }`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -60,7 +60,7 @@ export default function ShopProductCard({ product, onQuickAdd }: ShopProductCard
             {product.subtitle}
           </span>
           <h3 className="text-sm sm:text-base font-semibold uppercase tracking-tight text-[#121212] group-hover:text-[#C5A059] transition-colors leading-snug">
-            <Link href={`/shop?product=${product.slug}`}>{product.name}</Link>
+            <Link href={`/products/${product.slug}`}>{product.name}</Link>
           </h3>
         </div>
 

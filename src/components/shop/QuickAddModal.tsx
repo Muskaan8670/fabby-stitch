@@ -69,7 +69,7 @@ export default function QuickAddModal({
               src={product.imageSrc}
               alt={product.imageAlt}
               fill
-              className="object-cover object-center"
+              className="object-cover object-[center_12%]"
             />
           </div>
           <div className="space-y-1">

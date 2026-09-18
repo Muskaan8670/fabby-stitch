@@ -22,7 +22,7 @@ const PRIMARY_SERVICES = [
     subtitle: "Plastisol, Water-Based & DTG Printing",
     description:
       "Vibrant multi-color screen printing and Direct-to-Garment (DTG) graphics. Engineered for crisp chest logos, large back prints, and soft-hand feel.",
-    imageSrc: "/images/featured-tee-heavyweight-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.39 (1).jpeg",
     imageAlt: "Fabby Stitch Custom Screen Printing Services",
     href: "/custom-quote",
     tags: ["T-Shirts", "Hoodies", "Soft-Hand", "Multi-Color"],
@@ -33,7 +33,7 @@ const PRIMARY_SERVICES = [
     subtitle: "Individual Graphics, Names & Custom Quotes",
     description:
       "Custom apparel tailored for individual needs. Add custom names, jersey numbers, personal graphics, or unique artwork to hoodies, t-shirts, and caps.",
-    imageSrc: "/images/prod-hoodie-01.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg",
     imageAlt: "Fabby Stitch Personalized Apparel Services",
     href: "/custom-quote",
     tags: ["Custom Names", "Numbers", "Personal Tees", "Gift Items"],
@@ -44,7 +44,7 @@ const PRIMARY_SERVICES = [
     subtitle: "Uniform Programs & Staff Apparel",
     description:
       "Professional corporate apparel and team uniforms. Coordinated polos, hoodies, jackets, and caps designed for company staff, events, and organizations.",
-    imageSrc: "/images/featured-polo-pique-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
     imageAlt: "Fabby Stitch Corporate & Team Apparel Services",
     href: "/custom-quote",
     tags: ["Staff Uniforms", "Company Polos", "Event Apparel", "Workwear"],
@@ -55,7 +55,7 @@ const PRIMARY_SERVICES = [
     subtitle: "Scalable Manufacturing & Wholesale",
     description:
       "Reliable custom apparel production for volume orders. Strict workshop quality control, consistent garment construction, and expedited wholesale lead times.",
-    imageSrc: "/images/hero-campaign-group.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg",
     imageAlt: "Fabby Stitch Bulk Apparel Production Services",
     href: "/custom-quote",
     tags: ["Volume Orders", "No Minimums", "NYC Control", "Wholesale"],

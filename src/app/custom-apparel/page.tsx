@@ -21,7 +21,7 @@ const SERVICE_CAPABILITIES = [
     subtitle: "Plastisol • Water-Based • High-Density Graphics",
     description:
       "Vibrant multi-color screen printing alongside Direct-To-Garment (DTG) printing. Engineered for high detail artwork, back prints, and soft-hand feel on heavyweight cotton and fleece.",
-    imageSrc: "/images/featured-tee-heavyweight-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.39 (1).jpeg",
     tags: ["T-Shirts", "Hoodies", "Soft-Hand", "Multi-Color"],
   },
   {
@@ -48,7 +48,7 @@ const SERVICE_CAPABILITIES = [
     subtitle: "Staff Apparel • Hospitality • Executive Wear",
     description:
       "Durable, professional uniform programs for corporate teams, tech companies, restaurants, and sports organizations. Engineered for daily wear, wash durability, and sleek branding.",
-    imageSrc: "/images/featured-polo-pique-editorial.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
     tags: ["Staff Uniforms", "Polo Shirts", "Jackets", "Corporate Caps"],
   },
   {
@@ -57,7 +57,7 @@ const SERVICE_CAPABILITIES = [
     subtitle: "No Minimums • Scalable Production Runs",
     description:
       "Whether you need 1 custom embroidered prototype or a bulk production run of 5,000+ garments, our workshop delivers rigorous quality control and fast lead times.",
-    imageSrc: "/images/hero-campaign-group.jpg",
+    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg",
     tags: ["No Minimums", "Bulk Discount", "NYC Workshop", "Fast Shipping"],
   },
 ];

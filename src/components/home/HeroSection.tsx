@@ -7,11 +7,11 @@ export default function HeroSection() {
       {/* Background Editorial Visual Container */}
       <div className="absolute inset-0 z-0 opacity-100">
         <Image
-          src="/images/hero-editorial.png"
+          src="/images/landing-online-retail.png"
           alt="Fabby Stitch New York Apparel Workshop & Campaign Showcase"
           fill
           priority
-          className="object-cover object-[75%_35%] sm:object-[72%_35%] md:object-[75%_35%] lg:object-[80%_35%]"
+          className="object-cover object-[88%_25%] sm:object-[88%_20%] lg:object-[88%_25%]"
           sizes="100vw"
         />
         {/* Subtle Gradient Overlay for Text Readability without obscuring models */}

@@ -40,7 +40,7 @@ export default function MobileMenuDrawer() {
           {/* Drawer Top Bar */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-[#E4E4E7]">
             <Link
-              href="/"
+              href="/home"
               onClick={closeMenu}
               className="flex items-center gap-2"
             >

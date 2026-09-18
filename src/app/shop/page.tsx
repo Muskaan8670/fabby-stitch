@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import Header from "@/components/layout/Header";
@@ -25,7 +25,16 @@ const ITEMS_PER_PAGE = 8;
 
 function ShopContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const urlCategory = searchParams.get("category") || "all";
+  const urlProduct = searchParams.get("product");
+
+  // Redirect if ?product= query parameter is passed
+  useEffect(() => {
+    if (urlProduct) {
+      router.replace(`/products/${urlProduct}`);
+    }
+  }, [urlProduct, router]);
 
   // Filter State
   const [filters, setFilters] = useState<FilterState>({

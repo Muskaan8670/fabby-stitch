@@ -18,7 +18,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             src={product.imageSrc}
             alt={product.imageAlt}
             fill
-            className={`object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 ${
+            className={`object-cover object-[center_12%] transition-transform duration-700 ease-out group-hover:scale-105 ${
               product.soldOut ? "opacity-75 grayscale-[30%]" : ""
             }`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
