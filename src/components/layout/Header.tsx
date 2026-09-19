@@ -1,9 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DesktopNav from "./DesktopNav";
 import MobileMenuDrawer from "./MobileMenuDrawer";
+import SearchModal from "./SearchModal";
+import { useCart } from "@/context/CartContext";
 
 export default function Header() {
+  const { totalCount, isInitialized } = useCart();
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [showAccountInfo, setShowAccountInfo] = useState(false);
+
   return (
     <header className="sticky top-0 z-40 w-full bg-[#FAF9F6]/90 backdrop-blur-md border-b border-[#E4E4E7] transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -38,9 +47,10 @@ export default function Header() {
 
           {/* Icon Utilities (Search, Account, Cart) */}
           <div className="flex items-center gap-3 sm:gap-4 text-[#121212]">
-            {/* Search Button */}
+            {/* Functional Search Button */}
             <button
-              aria-label="Search items"
+              onClick={() => setIsSearchOpen(true)}
+              aria-label="Search products & categories"
               className="p-1.5 hover:text-[#C5A059] transition-colors focus:outline-none"
             >
               <svg
@@ -58,30 +68,49 @@ export default function Header() {
               </svg>
             </button>
 
-            {/* Account Link */}
-            <Link
-              href="/custom-quote"
-              aria-label="User Account"
-              className="hidden sm:block p-1.5 hover:text-[#C5A059] transition-colors"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            {/* Account Popover (No incorrect Custom Order redirect) */}
+            <div className="relative hidden sm:block">
+              <button
+                onClick={() => setShowAccountInfo((prev) => !prev)}
+                aria-label="User Account Info"
+                className="p-1.5 hover:text-[#C5A059] transition-colors focus:outline-none"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                />
-              </svg>
-            </Link>
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                  />
+                </svg>
+              </button>
+
+              {showAccountInfo && (
+                <div className="absolute right-0 top-full mt-2 w-56 bg-white border border-[#E4E4E7] p-4 shadow-xl z-50 text-xs text-[#121212] space-y-2 animate-in fade-in duration-200">
+                  <div className="font-bold uppercase tracking-wider text-[10px] text-[#C5A059]">
+                    Fabby Stitch Guest Account
+                  </div>
+                  <p className="text-[11px] text-zinc-600 leading-relaxed font-normal">
+                    Guest checkout active. No account login required to browse products or place custom inquiries.
+                  </p>
+                  <button
+                    onClick={() => setShowAccountInfo(false)}
+                    className="w-full text-center py-1 bg-zinc-100 hover:bg-zinc-200 text-[10px] uppercase font-bold tracking-wider"
+                  >
+                    Close
+                  </button>
+                </div>
+              )}
+            </div>
 
             {/* Cart Link */}
             <Link
-              href="/collections"
+              href="/cart"
               aria-label="Shopping Cart"
               className="relative p-1.5 hover:text-[#C5A059] transition-colors"
             >
@@ -98,8 +127,8 @@ export default function Header() {
                   d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.25 10.5a.75.75 0 100-1.5.75.75 0 000 1.5zm7.5 0a.75.75 0 100-1.5.75.75 0 000 1.5z"
                 />
               </svg>
-              <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#121212] text-[#FAF9F6] text-[10px] font-bold rounded-full flex items-center justify-center">
-                0
+              <span className="absolute -top-0.5 -right-0.5 min-w-4 h-4 px-1 bg-[#121212] text-[#FAF9F6] text-[10px] font-bold rounded-full flex items-center justify-center">
+                {isInitialized ? totalCount : 0}
               </span>
             </Link>
 
@@ -109,6 +138,12 @@ export default function Header() {
         </div>
 
       </div>
+
+      {/* Functional Search Modal */}
+      <SearchModal
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
+      />
     </header>
   );
 }

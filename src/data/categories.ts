@@ -65,8 +65,8 @@ export const CATEGORIES: CategoryItem[] = [
     name: "Long Sleeve T-shirt",
     subtitle: "Layered Cotton & Year-Round Apparel",
     description: "Premium long sleeve cotton t-shirts ideal for custom screen printing and seasonal wardrobe essentials.",
-    href: "/collections/t-shirts",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.30.06.jpeg",
+    href: "/collections/long-sleeves",
+    imageSrc: "/images/customization/long-sleeve-graphic.jpg",
     imageAlt: "Fabby Stitch Long Sleeve T-shirts Collection",
   },
   {
@@ -77,7 +77,7 @@ export const CATEGORIES: CategoryItem[] = [
     subtitle: "Structured 6-Panel & Embroidered Headwear",
     description: "Structured cotton twill caps and dad hats crafted for high-density 3D puff and custom embroidery.",
     href: "/collections/caps",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
+    imageSrc: "/images/customization/cap-graphic.jpg",
     imageAlt: "Fabby Stitch Headwear Collection",
   },
 ];

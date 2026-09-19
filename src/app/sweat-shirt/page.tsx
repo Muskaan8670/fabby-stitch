@@ -1,8 +1,12 @@
-"use client";
-
+import type { Metadata } from "next";
 import CategoryCustomizationView from "@/components/collections/CategoryCustomizationView";
 
-export default function SweatshirtsCollectionClient() {
+export const metadata: Metadata = {
+  title: "Custom Sweat Shirt | Fabby Stitch NYC",
+  description: "Share your design requirement for custom Sweat Shirts with Fabby Stitch NYC. Heavyweight fleece, embroidery, screen printing, and fast turnaround.",
+};
+
+export default function SweatShirtPage() {
   return (
     <CategoryCustomizationView
       categorySlug="sweatshirts"

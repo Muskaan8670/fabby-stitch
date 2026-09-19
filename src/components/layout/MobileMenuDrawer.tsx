@@ -17,7 +17,7 @@ export default function MobileMenuDrawer() {
       <button
         onClick={toggleMenu}
         aria-label="Open Navigation Menu"
-        className="p-2 text-[#121212] hover:text-[#C5A059] transition-colors focus:outline-none"
+        className="lg:hidden p-2 text-[#121212] hover:text-[#C5A059] transition-colors focus:outline-none"
       >
         <svg
           className="w-6 h-6"

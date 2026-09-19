@@ -18,8 +18,8 @@ const WE_SERVED_IMAGES = [
   { id: "ws-tshirt", label: "T-Shirt", src: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.39 (1).jpeg" },
   { id: "ws-sweatshirt", label: "Sweat Shirt", src: "/images/newImages/WhatsApp Image 2026-09-17 at 18.25.04 (3).jpeg" },
   { id: "ws-hoodie", label: "Hoodie", src: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg" },
-  { id: "ws-cap", label: "Cap", src: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg" },
-  { id: "ws-longsleeve", label: "Long-Sleeve T-shirt", src: "/images/newImages/WhatsApp Image 2026-09-17 at 18.30.06.jpeg" },
+  { id: "ws-cap", label: "Cap", src: "/images/customization/cap-graphic.jpg" },
+  { id: "ws-longsleeve", label: "Long-Sleeve T-shirt", src: "/images/customization/long-sleeve-graphic.jpg" },
 ];
 
 export default function CustomOrderPage() {

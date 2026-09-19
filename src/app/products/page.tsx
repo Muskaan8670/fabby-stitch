@@ -52,8 +52,8 @@ const PRODUCT_CATEGORIES = [
     name: "Long Sleeve T-shirt",
     subtitle: "Layered Cotton Essentials",
     description: "Premium long sleeve cotton t-shirts ideal for custom screen printing and seasonal wardrobe essentials.",
-    href: "/collections/t-shirts",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.30.06.jpeg",
+    href: "/collections/long-sleeves",
+    imageSrc: "/images/customization/long-sleeve-graphic.jpg",
     imageAlt: "Fabby Stitch Long Sleeve T-shirts Collection",
     layout: "medium",
   },
@@ -63,7 +63,7 @@ const PRODUCT_CATEGORIES = [
     subtitle: "Structured 6-Panel & 3D Puff Embroidery",
     description: "Structured cotton twill caps and dad hats crafted for high-density 3D puff embroidery and custom branding.",
     href: "/collections/caps",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
+    imageSrc: "/images/customization/cap-graphic.jpg",
     imageAlt: "Fabby Stitch Headwear Collection",
     layout: "full",
   },
@@ -216,7 +216,7 @@ export default function ProductsPage() {
                   src={cat.imageSrc}
                   alt={cat.imageAlt}
                   fill
-                  className="object-cover object-[center_15%] transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
+                  className="object-contain p-2 bg-zinc-100 transition-transform duration-700 ease-out group-hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#121212]/30 to-[#121212]/90 hidden lg:block" />

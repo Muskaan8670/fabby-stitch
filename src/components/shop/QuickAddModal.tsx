@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { Product } from "@/data/products";
 
+import { useCart } from "@/context/CartContext";
+
 interface QuickAddModalProps {
   product: Product | null;
   isOpen: boolean;
@@ -17,6 +19,7 @@ export default function QuickAddModal({
   onClose,
   onAddToCart,
 }: QuickAddModalProps) {
+  const { addToCart } = useCart();
   const [selectedColor, setSelectedColor] = useState<string>("");
   const [selectedSize, setSelectedSize] = useState<string>("");
   const [quantity, setQuantity] = useState<number>(1);
@@ -29,6 +32,12 @@ export default function QuickAddModal({
 
   const handleAddToCart = () => {
     if (product.soldOut) return;
+    addToCart({
+      product,
+      color: activeColor,
+      size: activeSize,
+      quantity,
+    });
     if (onAddToCart) {
       onAddToCart({
         product,

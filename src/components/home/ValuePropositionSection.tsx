@@ -13,7 +13,7 @@ export default function ValuePropositionSection() {
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/5 backdrop-blur-md border border-white/10 text-[10px] sm:text-xs uppercase tracking-[0.22em] text-[#C5A059]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]" />
-              <span>Why Favvy Stitch</span>
+              <span>Why Fabby Stitch</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-light uppercase tracking-tight text-white leading-[1.1]">
               Uncompromising Standards. <br className="hidden sm:block" />

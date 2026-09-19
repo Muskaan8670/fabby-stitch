@@ -1,8 +1,12 @@
-"use client";
-
+import type { Metadata } from "next";
 import CategoryCustomizationView from "@/components/collections/CategoryCustomizationView";
 
-export default function PolosCollectionClient() {
+export const metadata: Metadata = {
+  title: "Custom Polo Shirt | Fabby Stitch NYC",
+  description: "Share your design requirement for custom Polo Shirts with Fabby Stitch NYC. Premium pique knit polos, embroidery, screen printing, and low minimums.",
+};
+
+export default function PoloShirtPage() {
   return (
     <CategoryCustomizationView
       categorySlug="polos"

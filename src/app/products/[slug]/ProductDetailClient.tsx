@@ -10,6 +10,7 @@ import QuickAddModal from "@/components/shop/QuickAddModal";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { useCart } from "@/context/CartContext";
 
 interface ProductDetailClientProps {
   product: Product;
@@ -20,6 +21,8 @@ export default function ProductDetailClient({
   product,
   relatedProducts,
 }: ProductDetailClientProps) {
+  const { addToCart } = useCart();
+
   // Gallery Image State
   const images = product.images && product.images.length > 0 ? product.images : [product.imageSrc];
   const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -42,6 +45,12 @@ export default function ProductDetailClient({
   };
 
   const handleAddToCart = () => {
+    addToCart({
+      product,
+      color: selectedColor,
+      size: selectedSize,
+      quantity,
+    });
     setAddedToCartToast(true);
     setTimeout(() => {
       setAddedToCartToast(false);

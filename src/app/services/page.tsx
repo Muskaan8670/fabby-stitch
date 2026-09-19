@@ -11,10 +11,13 @@ const PRIMARY_SERVICES = [
     subtitle: "High-Density 3D Puff & Flat Stitching",
     description:
       "Textured, durable branding for polo chests, jacket sleeves, outerwear, and structured caps. Custom digitized artwork stitched with vibrant, colorfast thread.",
-    imageSrc: "/images/gateway-corporate-custom.jpg",
-    imageAlt: "Fabby Stitch Custom Embroidery Services",
     href: "/custom-quote",
     tags: ["Caps", "Polo Shirts", "Jackets", "Outerwear"],
+    icon: (
+      <svg className="w-12 h-12 text-[#C5A059] transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.006-.619a15.997 15.997 0 015.006-8.438m-5.006 8.438L12 12m-6.78 4.122l2.25-2.25m6.78-2.25l2.25-2.25m-2.25 2.25a15.998 15.998 0 001.62-3.388m0 0a15.997 15.997 0 008.438-5.006m-8.438 5.006L12 12m4.122-6.78l-2.25 2.25" />
+      </svg>
+    ),
   },
   {
     number: "03",
@@ -22,10 +25,13 @@ const PRIMARY_SERVICES = [
     subtitle: "Plastisol, Water-Based & DTG Printing",
     description:
       "Vibrant multi-color screen printing and Direct-to-Garment (DTG) graphics. Engineered for crisp chest logos, large back prints, and soft-hand feel.",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.39 (1).jpeg",
-    imageAlt: "Fabby Stitch Custom Screen Printing Services",
     href: "/custom-quote",
     tags: ["T-Shirts", "Hoodies", "Soft-Hand", "Multi-Color"],
+    icon: (
+      <svg className="w-12 h-12 text-[#C5A059] transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25zM12 15.75h.008v.008H12v-.008z" />
+      </svg>
+    ),
   },
   {
     number: "04",
@@ -33,10 +39,13 @@ const PRIMARY_SERVICES = [
     subtitle: "Individual Graphics, Names & Custom Quotes",
     description:
       "Custom apparel tailored for individual needs. Add custom names, jersey numbers, personal graphics, or unique artwork to hoodies, t-shirts, and caps.",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg",
-    imageAlt: "Fabby Stitch Personalized Apparel Services",
     href: "/custom-quote",
     tags: ["Custom Names", "Numbers", "Personal Tees", "Gift Items"],
+    icon: (
+      <svg className="w-12 h-12 text-[#C5A059] transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+      </svg>
+    ),
   },
   {
     number: "05",
@@ -44,10 +53,13 @@ const PRIMARY_SERVICES = [
     subtitle: "Uniform Programs & Staff Apparel",
     description:
       "Professional corporate apparel and team uniforms. Coordinated polos, hoodies, jackets, and caps designed for company staff, events, and organizations.",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.21.12.jpeg",
-    imageAlt: "Fabby Stitch Corporate & Team Apparel Services",
     href: "/custom-quote",
     tags: ["Staff Uniforms", "Company Polos", "Event Apparel", "Workwear"],
+    icon: (
+      <svg className="w-12 h-12 text-[#C5A059] transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+      </svg>
+    ),
   },
   {
     number: "06",
@@ -55,10 +67,13 @@ const PRIMARY_SERVICES = [
     subtitle: "Scalable Manufacturing & Wholesale",
     description:
       "Reliable custom apparel production for volume orders. Strict workshop quality control, consistent garment construction, and expedited wholesale lead times.",
-    imageSrc: "/images/newImages/WhatsApp Image 2026-09-17 at 18.23.38.jpeg",
-    imageAlt: "Fabby Stitch Bulk Apparel Production Services",
     href: "/custom-quote",
     tags: ["Volume Orders", "No Minimums", "NYC Control", "Wholesale"],
+    icon: (
+      <svg className="w-12 h-12 text-[#C5A059] transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+      </svg>
+    ),
   },
 ];
 
@@ -220,19 +235,12 @@ export default function ServicesPage() {
                 key={srv.number}
                 className="group relative flex flex-col justify-between bg-white border border-[#E4E4E7] overflow-hidden transition-all duration-300 hover:border-zinc-400 hover:shadow-xl"
               >
-                {/* Visual Image */}
-                <div className="relative w-full aspect-[16/10] bg-zinc-900 overflow-hidden">
-                  <Image
-                    src={srv.imageSrc}
-                    alt={srv.imageAlt}
-                    fill
-                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/70 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 z-10 px-2.5 py-1 bg-[#121212]/90 backdrop-blur-md text-[#FAF9F6] text-[10px] font-mono font-bold border border-white/10">
+                {/* Visual Icon Header */}
+                <div className="relative w-full aspect-[16/10] bg-[#121212] overflow-hidden flex items-center justify-center p-6 border-b border-zinc-800 group-hover:bg-[#18181b] transition-colors">
+                  <span className="absolute top-4 left-4 z-10 px-2.5 py-1 bg-[#141416] text-[#FAF9F6] text-[10px] font-mono font-bold border border-white/10">
                     {srv.number}
                   </span>
+                  {srv.icon}
                 </div>
 
                 {/* Content */}

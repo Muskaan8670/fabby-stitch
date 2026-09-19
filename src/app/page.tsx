@@ -45,10 +45,12 @@ export default function GatewayPage() {
         <div className="group relative flex flex-col justify-end p-6 sm:p-10 lg:p-14 min-h-[420px] lg:min-h-0 overflow-hidden border-b lg:border-b-0 lg:border-r border-zinc-200/60">
           {/* Approved Fashion/Editorial Group Image */}
           <Image
-            src="/images/landing-online-retail.png"
+            src="/images/hero-new.webp"
             alt="Fabby Stitch Online Retail"
             fill
             priority
+            quality={100}
+            unoptimized
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             style={{ objectPosition: "88% 50%" }}
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -85,10 +87,12 @@ export default function GatewayPage() {
         <div className="group relative flex flex-col justify-end p-6 sm:p-10 lg:p-14 min-h-[420px] lg:min-h-0 overflow-hidden">
           {/* Approved Apparel Workshop/Customization Image */}
           <Image
-            src="/images/landing-corporate-custom.jpg"
+            src="/images/landing-corporate-custom.webp"
             alt="Fabby Stitch Corporate & Custom Workshop"
             fill
             priority
+            quality={100}
+            unoptimized
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             style={{ objectPosition: "78% 50%" }}
             sizes="(max-width: 1024px) 100vw, 50vw"

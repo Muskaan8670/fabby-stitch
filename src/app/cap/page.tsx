@@ -1,8 +1,12 @@
-"use client";
-
+import type { Metadata } from "next";
 import CategoryCustomizationView from "@/components/collections/CategoryCustomizationView";
 
-export default function CapsCollectionClient() {
+export const metadata: Metadata = {
+  title: "Custom Cap & Headwear | Fabby Stitch NYC",
+  description: "Share your design requirement for custom Caps with Fabby Stitch NYC. Structured 6-panel hats, 3D puff embroidery, woven patches, and low minimums.",
+};
+
+export default function CapPage() {
   return (
     <CategoryCustomizationView
       categorySlug="caps"
