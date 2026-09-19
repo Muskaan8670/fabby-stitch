@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Background Editorial Visual Container */}
       <div className="absolute inset-0 z-0 opacity-100">
         <Image
-          src="/images/hero-new.jpg"
+          src="/images/hero-new.webp"
           alt="Fabby Stitch New York Apparel Workshop & Campaign Showcase"
           fill
           priority
